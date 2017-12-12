@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Filimingo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    console.log('hello');
+    $('#btn1').on('click', function(){
+      dict = {'key1':"value1", 'key2':"value2"};
+      $('.card').append(dict['key1']);
+      $('.card').append(dict['key2']);
+      $('.card').append('<img class="img-thumbnail" src="https://www.w3schools.com/tags/smiley.gif">');
+      // ('.card').append(el);
+    });
+  });
+
+</script>
+<script type="text/javascript">
+  // $files = $_FILES['upload_attachment'];
+    // foreach ($_FILES as $file => $array) {
+    //   $newupload = insert_attachment($file,null);
+    //   // save the $newupload with you from data, as psot id for the attachment
+    //  }
+     // function  insert_attachment($file_handler,$post_id,$setthumb='false') {
+
+        // check to make sure its a successful upload
+     //    if ($_FILES[$file_handler]['error'] !== UPLOAD_ERR_OK) __return_false();
+
+     //      require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+     //      require_once(ABSPATH . "wp-admin" . '/includes/file.php');
+     //      require_once(ABSPATH . "wp-admin" . '/includes/media.php');
+     //      $attach_id = media_handle_upload( $file_handler, $post_id );
+
+     //   if ($setthumb) update_post_meta($post_id,'_thumbnail_id',$attach_id);
+     //     return $attach_id;
+     // } 
+</script>
+  </head>
+  <body>
+    
+      
+    
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Filimingo</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="main1.html">Home</a></li>
+      <li class="active"><a href="#">Upload</a></li>
+      <li class="active"><a href="contact.html">Contact us</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </div>
+</nav>
+    
+    <div class="col-xs-12">
+      <div class="container">
+  
+      <div class="uploadname">
+        <div class="container">
+  <h2>Upload</h2>
+  <p>You can enter the Name and Details here.:</p>
+  <form>
+    <div class="form-group">
+      <div class="col-xs-8">
+        <div class="row">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr"  ">
+    </div>
+    </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-8">
+        <div class="row">
+      <label for="pwd">Place:</label>
+      <input type="text" class="form-control" id="place">
+    </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-8">
+        <div class="row">
+      <label for="pwd">E-mail:</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    </div>
+    <div class="col-xs-5">
+      <label for="pwd">Age:</label>
+    <input type="number" name="age" value="">
+  </div>
+    <div class="col-xs-6">
+      <label for="pwd">Gender:</label>
+    <input type="radio" name="gender" value="Male">
+    <label for="pwd">Male</label>
+    <input type="radio" name="gender" value="Female">
+    <label for="pwd">Female</label>
+    <input type="radio" name="gender" value="Other">
+    <label for="pwd">Other</label>
+  </div>
+  </form>
+    </div>
+    </div>
+
+      <div>
+        <p class="skip"></p>
+      </div>
+      </div>
+      <div class="card">
+        <p></p>
+<form action="upload_file.php" method="post" enctype="multipart/form-data">
+  <h4>  Upload photos:</h4><br><br><input type="file" id="myFile" name="img" multiple>
+  
+</form>
+<br>
+
+<button onclick="myFunction()" style="background-color: MediumSeaGreen ;">Upload</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myFile").multiple;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
