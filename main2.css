@@ -18,6 +18,7 @@ body{
 }
 .dropdown-menu {
   max-width: 18px;
+  min-width: 18px: 
 }
 .dropdown-menu li a {
   display: block;
@@ -33,3 +34,30 @@ body{
 .col-xs-3{
 	background-color: 
 }
+
+#uploder{
+	position: relative;
+	margin: 15px;
+	
+	width: 300px;
+	height: 200px;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.upload{
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
